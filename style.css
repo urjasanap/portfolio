@@ -1,0 +1,90 @@
+html{
+	scroll-behavior: smooth;
+}
+body{
+	margin: 0;
+	padding: 0;
+	font-family: serif;
+	opacity: 0;
+	transition: opacity 3s;
+}
+div{
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(to top right, #ff99ff 0%, #800000 100%);
+}
+div:nth-child(odd){
+	background: linear-gradient(to top left, #ff9933 0%, #800000 100%);
+}
+ul{
+	width: 100%;
+	background: #000;
+	height: 50px;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 0;
+	letter-spacing: 0;
+	display: flex;
+	justify-content: space-around;
+}
+ul li{
+	list-style: none;
+}
+ul li a{
+	color: #fff;
+	line-height: 50px;
+	box-sizing: border-box;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+p {
+	width: 50%;
+	animation-duration: 3s;
+	animation-name: slidein;
+
+}
+
+table{
+	width: 50%;
+	animation-duration: 3s;
+	animation-name: slidein;
+
+}
+img {
+	
+	animation-duration: 3s;
+	animation-name: slidein1;
+
+}
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 5px;
+  text-align: left;
+}
+
+
+@keyframes slidein{
+	from{
+		margin-left: 20%;
+	}
+	to{
+		width: 50%;
+
+	}
+}
+@keyframes slidein1{
+	from{
+		margin-right: 0%;
+	}
+	to{
+		margin-left: 20px%;
+
+	}
+}
